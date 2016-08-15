@@ -3,7 +3,7 @@
 import {
   IPCMessageReader, IPCMessageWriter, ServerCapabilities, SymbolKind, Range,
   createConnection, IConnection, TextDocumentSyncKind,
-  TextDocuments, TextDocument, Diagnostic, DiagnosticSeverity,
+  TextDocuments, TextDocument, Diagnostic, DiagnosticSeverity, CodeLens,
   InitializeResult, SymbolInformation, Files, ResponseError, InitializeError
 } from 'vscode-languageserver';
 
@@ -14,6 +14,7 @@ import {parse} from './parser';
 
 let lodash = require('lodash');
 let apiDescriptionMixins = require('lodash-api-description');
+const dredd = require('dredd');
 
 let refractDocuments = new Map();
 apiDescriptionMixins(lodash);
@@ -32,7 +33,10 @@ connection.onInitialize((params): InitializeResult => {
 
   const capabilities: ServerCapabilities = {
     textDocumentSync: documents.syncKind,
-    documentSymbolProvider: true
+    documentSymbolProvider: true,
+    codeLensProvider: {
+      resolveProvider: true
+    }
   }
 
   return <InitializeResult>{
@@ -144,5 +148,40 @@ connection.onDocumentSymbol((symbolParam) => {
 connection.onRequest({ method: 'parserOutput' }, (code: string) => {
   return parse(code, currentSettings.parser);
 });
+
+let promise = undefined;
+
+connection.onCodeLens((params) => {
+
+  const config = {
+    silent: true,
+    server: 'https://plutonium.apiary-services.com',
+    data: {
+      'doc.apib': documents.get(params.textDocument.uri).getText()
+    }
+  };
+
+  var d = new dredd(config);
+  promise = new Promise((resolve, reject) => {
+    d.run((err, stats) => {
+      if (err)
+        return reject(err);
+      return resolve(stats);
+    });
+  });
+
+  return [CodeLens.create(Range.create(0, 1, 0, 1), {})]
+});
+
+connection.onCodeLensResolve((src) => {
+  return promise.then((stats) => {
+    src.command = {
+      title: `Dredd - executed ${stats.tests} - ${stats.passes} passes - ${stats.failures} fails - ${stats.skipped} skipped`,
+      command: 'apiElements.dredd.showReport',
+      arguments: [1, 2, 3, 4]
+    }
+    return src;
+  })
+})
 
 connection.listen();
