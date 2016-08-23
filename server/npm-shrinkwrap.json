@@ -1,0 +1,218 @@
+{
+  "name": "vscode-apielements",
+  "version": "0.3.0",
+  "dependencies": {
+    "argparse": {
+      "version": "1.0.7",
+      "from": "argparse@>=1.0.7 <2.0.0",
+      "resolved": "https://registry.npmjs.org/argparse/-/argparse-1.0.7.tgz"
+    },
+    "babel-runtime": {
+      "version": "5.8.38",
+      "from": "babel-runtime@>=5.5.6 <6.0.0",
+      "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-5.8.38.tgz"
+    },
+    "call-me-maybe": {
+      "version": "1.0.1",
+      "from": "call-me-maybe@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/call-me-maybe/-/call-me-maybe-1.0.1.tgz"
+    },
+    "chance": {
+      "version": "1.0.4",
+      "from": "chance@>=1.0.4 <2.0.0",
+      "resolved": "https://registry.npmjs.org/chance/-/chance-1.0.4.tgz"
+    },
+    "core-js": {
+      "version": "1.2.7",
+      "from": "core-js@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/core-js/-/core-js-1.2.7.tgz"
+    },
+    "debug": {
+      "version": "2.2.0",
+      "from": "debug@>=2.2.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/debug/-/debug-2.2.0.tgz"
+    },
+    "deckardcain": {
+      "version": "0.1.6",
+      "from": "deckardcain@>=0.1.6 <0.2.0",
+      "resolved": "https://registry.npmjs.org/deckardcain/-/deckardcain-0.1.6.tgz"
+    },
+    "deep-extend": {
+      "version": "0.4.1",
+      "from": "deep-extend@>=0.4.0 <0.5.0",
+      "resolved": "https://registry.npmjs.org/deep-extend/-/deep-extend-0.4.1.tgz"
+    },
+    "deref": {
+      "version": "0.6.4",
+      "from": "deref@>=0.6.4 <0.7.0",
+      "resolved": "https://registry.npmjs.org/deref/-/deref-0.6.4.tgz"
+    },
+    "discontinuous-range": {
+      "version": "1.0.0",
+      "from": "discontinuous-range@1.0.0",
+      "resolved": "https://registry.npmjs.org/discontinuous-range/-/discontinuous-range-1.0.0.tgz"
+    },
+    "drafter": {
+      "version": "1.0.0",
+      "from": "drafter@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/drafter/-/drafter-1.0.0.tgz"
+    },
+    "drafter.js": {
+      "version": "2.4.3",
+      "from": "drafter.js@>=2.4.3 <3.0.0",
+      "resolved": "https://registry.npmjs.org/drafter.js/-/drafter.js-2.4.3.tgz"
+    },
+    "es6-promise": {
+      "version": "3.2.1",
+      "from": "es6-promise@>=3.0.2 <4.0.0",
+      "resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-3.2.1.tgz"
+    },
+    "esprima": {
+      "version": "2.7.2",
+      "from": "esprima@>=2.6.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/esprima/-/esprima-2.7.2.tgz"
+    },
+    "faker": {
+      "version": "3.1.0",
+      "from": "faker@>=3.1.0 <3.2.0",
+      "resolved": "https://registry.npmjs.org/faker/-/faker-3.1.0.tgz"
+    },
+    "fury": {
+      "version": "2.1.0",
+      "from": "fury@>=2.1.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/fury/-/fury-2.1.0.tgz"
+    },
+    "fury-adapter-apib-parser": {
+      "version": "0.3.0",
+      "from": "fury-adapter-apib-parser@>=0.3.0 <0.4.0",
+      "resolved": "https://registry.npmjs.org/fury-adapter-apib-parser/-/fury-adapter-apib-parser-0.3.0.tgz"
+    },
+    "fury-adapter-swagger": {
+      "version": "0.9.1",
+      "from": "fury-adapter-swagger@>=0.9.1 <0.10.0",
+      "resolved": "https://registry.npmjs.org/fury-adapter-swagger/-/fury-adapter-swagger-0.9.1.tgz",
+      "dependencies": {
+        "lodash": {
+          "version": "3.10.1",
+          "from": "lodash@>=3.10.1 <4.0.0",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz"
+        }
+      }
+    },
+    "js-yaml": {
+      "version": "3.6.1",
+      "from": "js-yaml@>=3.4.2 <4.0.0",
+      "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.6.1.tgz"
+    },
+    "json-schema-faker": {
+      "version": "0.3.6",
+      "from": "json-schema-faker@>=0.3.3 <0.4.0",
+      "resolved": "https://registry.npmjs.org/json-schema-faker/-/json-schema-faker-0.3.6.tgz"
+    },
+    "json-schema-ref-parser": {
+      "version": "1.4.1",
+      "from": "json-schema-ref-parser@>=1.4.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/json-schema-ref-parser/-/json-schema-ref-parser-1.4.1.tgz"
+    },
+    "lodash": {
+      "version": "4.15.0",
+      "from": "lodash@>=4.15.0 <5.0.0",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.15.0.tgz"
+    },
+    "lodash-api-description": {
+      "version": "0.0.2",
+      "from": "lodash-api-description@0.0.2",
+      "resolved": "https://registry.npmjs.org/lodash-api-description/-/lodash-api-description-0.0.2.tgz"
+    },
+    "lodash.get": {
+      "version": "4.4.2",
+      "from": "lodash.get@>=4.1.2 <5.0.0",
+      "resolved": "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz"
+    },
+    "minim": {
+      "version": "0.14.2",
+      "from": "minim@>=0.14.0 <0.15.0",
+      "resolved": "https://registry.npmjs.org/minim/-/minim-0.14.2.tgz"
+    },
+    "minim-api-description": {
+      "version": "0.1.7",
+      "from": "minim-api-description@>=0.1.4 <0.2.0",
+      "resolved": "https://registry.npmjs.org/minim-api-description/-/minim-api-description-0.1.7.tgz"
+    },
+    "minim-parse-result": {
+      "version": "0.2.2",
+      "from": "minim-parse-result@>=0.2.2 <0.3.0",
+      "resolved": "https://registry.npmjs.org/minim-parse-result/-/minim-parse-result-0.2.2.tgz"
+    },
+    "ms": {
+      "version": "0.7.1",
+      "from": "ms@0.7.1",
+      "resolved": "https://registry.npmjs.org/ms/-/ms-0.7.1.tgz"
+    },
+    "ono": {
+      "version": "2.2.1",
+      "from": "ono@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npmjs.org/ono/-/ono-2.2.1.tgz"
+    },
+    "randexp": {
+      "version": "0.4.3",
+      "from": "randexp@>=0.4.3 <0.5.0",
+      "resolved": "https://registry.npmjs.org/randexp/-/randexp-0.4.3.tgz"
+    },
+    "ret": {
+      "version": "0.1.12",
+      "from": "ret@>=0.1.10 <0.2.0",
+      "resolved": "https://registry.npmjs.org/ret/-/ret-0.1.12.tgz"
+    },
+    "sprintf-js": {
+      "version": "1.0.3",
+      "from": "sprintf-js@>=1.0.2 <1.1.0",
+      "resolved": "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
+    },
+    "swagger-methods": {
+      "version": "1.0.0",
+      "from": "swagger-methods@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/swagger-methods/-/swagger-methods-1.0.0.tgz"
+    },
+    "swagger-parser": {
+      "version": "3.4.1",
+      "from": "swagger-parser@>=3.3.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/swagger-parser/-/swagger-parser-3.4.1.tgz"
+    },
+    "swagger-schema-official": {
+      "version": "2.0.0-bab6bed",
+      "from": "swagger-schema-official@2.0.0-bab6bed",
+      "resolved": "https://registry.npmjs.org/swagger-schema-official/-/swagger-schema-official-2.0.0-bab6bed.tgz"
+    },
+    "uptown": {
+      "version": "0.4.1",
+      "from": "uptown@>=0.4.1 <0.5.0",
+      "resolved": "https://registry.npmjs.org/uptown/-/uptown-0.4.1.tgz"
+    },
+    "validator": {
+      "version": "5.5.0",
+      "from": "validator@>=5.0.0 <6.0.0",
+      "resolved": "https://registry.npmjs.org/validator/-/validator-5.5.0.tgz"
+    },
+    "vscode-jsonrpc": {
+      "version": "2.3.1",
+      "from": "vscode-jsonrpc@>=2.2.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/vscode-jsonrpc/-/vscode-jsonrpc-2.3.1.tgz"
+    },
+    "vscode-languageserver": {
+      "version": "2.2.1",
+      "from": "vscode-languageserver@>=2.2.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/vscode-languageserver/-/vscode-languageserver-2.2.1.tgz"
+    },
+    "yaml-js": {
+      "version": "0.1.3",
+      "from": "yaml-js@>=0.1.3 <0.2.0",
+      "resolved": "https://registry.npmjs.org/yaml-js/-/yaml-js-0.1.3.tgz"
+    },
+    "z-schema": {
+      "version": "3.17.0",
+      "from": "z-schema@>=3.16.1 <4.0.0",
+      "resolved": "https://registry.npmjs.org/z-schema/-/z-schema-3.17.0.tgz"
+    }
+  }
+}
